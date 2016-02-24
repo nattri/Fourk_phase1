@@ -34,6 +34,7 @@ function saveUser(req, res) {
             res.json({type: 'error', msg: err});
         } else {
             console.log('user saved successfully');
+            res.json({type:'success'});
         }
     });
 }
