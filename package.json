@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./config/server",
     "watch": "nodemon ./config/server",
-    "lint": "jshint ./"
+    "lint": "jshint ./",
+    "debug": "node-debug app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -14,6 +15,7 @@
     "express": "~4.13.1",
     "mongoose": "^4.4.4",
     "morgan": "~1.6.1",
+    "node-inspector": "^0.12.7",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
