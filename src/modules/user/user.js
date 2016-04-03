@@ -6,6 +6,8 @@ var router = express.Router();
 /*
  *   URL's starts with /api/user/
  */
+
+/* my comment */
 router.route('/')
     .get(getUsers)
     .post(saveUser);
@@ -59,7 +61,7 @@ function updateUser(req, res) {
         name: req.body.name
     };
     userService.updateUser(id, obj, function (err) {
-        if(err) {
+        if (err) {
             console.dir('Error in updating user');
             res.json({type: 'error', msg: err});
         }
