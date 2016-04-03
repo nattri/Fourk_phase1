@@ -11,6 +11,6 @@ db.once('open', function () {
 });
 
 /* un-comment to connect to cloud database */
-mongoose.connect('mongodb://admin:password1@ds011158.mongolab.com:11158/fourkdb');
+/*mongoose.connect('mongodb://admin:password1@ds011158.mongolab.com:11158/fourkdb');*/
 /* un-comment to connect to local database */
-//mongoose.connect('mongodb://localhost/fourkdb_local');
+mongoose.connect('mongodb://localhost/fourkdb_local');
